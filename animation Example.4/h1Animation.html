@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>h1 Animetion</title>
+  <style>
+    h1{
+      background-color:#d4c4ff;
+      width: 30vw;
+      color: #fff;
+      animation: move 5s linear alternate infinite;
+      /* animation: bounce 2s ease alternate infinite; */
+    }
+    @keyframes move {
+      from{
+        margin-left: 0px;
+      }
+      to{
+        margin-left: 300px;
+      }
+    }
+
+    @keyframes bounce {
+      0% {
+        margin-top: 0;
+      }
+      30% {
+        margin-top: 50px;
+      }
+      50% {
+        margin-top: 30px;
+      }
+      100% {
+        margin-top: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Some News</h1>
+</body>
+</html>

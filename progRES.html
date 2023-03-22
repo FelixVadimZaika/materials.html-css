@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>project1</title>
+    <style>
+       .progress {
+    background: linear-gradient(to bottom, #333, #999);
+    border: 1px solid #333; /* Рамка */
+    height: 20px; 
+    border-radius: 10px; 
+    position: relative;
+    overflow: hidden; /*непотріб*/
+    }
+   .progress::before{
+    content: 'UPLOADING 40%';
+    position: absolute; 
+    height: 18px; width: 150px;
+    background: linear-gradient(to bottom, #5bc1fe,#018ef2 50%, #57befd); 
+    border: 1px solid #008DF2;
+    box-shadow: 3px 0 3px rgba(0,0,0,0.5); /* Тень права*/
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="progress"></div>
+    <h2>Title of video</h2>
+</body>
+</html>

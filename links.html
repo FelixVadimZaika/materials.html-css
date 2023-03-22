@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 80%;
+            margin: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav a {
+            font-size: 1.2em;
+            text-decoration: none;
+            background-color: green;
+            width: 300px;
+            display: block;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            border-bottom: 2px solid darkgreen;
+        }
+        nav a:hover {
+            background-color: darkgreen;
+        }
+
+        .links a {
+            text-decoration: none;
+        }
+        
+        /* Pseudo Classes */
+        /* Якщо по посиланню не був здійснений перехід */
+        .links a:link {
+            color: black;
+        }
+        /* Якщо був здійснений перехід по посиланню  */
+        .links a:visited {
+            color: orange;
+        }
+        /* При наведенні */
+        .links a:hover {
+            text-decoration: underline;
+        }
+        /* При натискання */
+        .links a:active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://www.w3schools.com" target="_self">W3Schools</a></li>
+            <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+            <li><a href="images/water.jpg" target="main-frame">Wikipedia</a></li>
+        </ul>
+    </nav>
+    
+    <iframe width="500" height="200" src="https://en.wikipedia.org/" frameborder="0" name="main-frame"></iframe>
+    
+    <hr>
+    <div class="links">
+        <a href="#intro">Intro</a>
+        <a href="#about">About</a>
+        <a href="#contacts">Contacts</a>
+    </div>
+
+    <h2 id="intro">Intro</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem totam ipsum sapiente officiis sit unde, esse voluptatem commodi vero quo sit libero veritatis consequuntur at dolore necessitatibus modi voluptas optio sapiente impedit earum eligendi aliquid sunt! Numquam laudantium rem fugiat ab quis quidem quaerat necessitatibus dignissimos distinctio doloremque dolorem, ad voluptatem iste illum nihil id harum error nesciunt eum non alias tempora. Nostrum molestiae, impedit facere expedita eaque illo incidunt! Numquam voluptas repellat, maiores eveniet necessitatibus a cupiditate facere debitis. Suscipit repellat assumenda itaque ea cupiditate tempore vitae est nemo voluptates velit sequi earum voluptas quasi rem esse non deserunt ipsa, eius saepe? Quas, omnis, provident quasi praesentium quaerat recusandae quos deserunt asperiores voluptatum obcaecati reiciendis consectetur, enim quae officiis! Illo molestias ex voluptas vel minima expedita perferendis voluptatum earum ut enim, incidunt explicabo possimus aliquam quas, temporibus fugit delectus eligendi repellendus. Iste odio possimus explicabo accusantium. Excepturi qui ratione provident amet labore veniam veritatis error ut natus voluptates, aut voluptas corrupti accusantium tempora temporibus quidem iure illum odio minima suscipit cum. Iure, vero vel, exercitationem, illum quod rem quas beatae repudiandae debitis doloribus ab quidem magnam aliquam quaerat facilis nisi nihil sint dolorum atque est optio saepe officia. Pariatur beatae reprehenderit eos animi est. Delectus minima dolores maiores similique! Dolores, eligendi, vero debitis saepe quod veritatis dignissimos laudantium et suscipit sequi corrupti! Aliquid vero quia ipsa modi? Nam, aut a quae illo soluta nostrum perspiciatis minima voluptates sint molestias in eos officia quod corporis incidunt debitis. Laborum, est consequatur cupiditate, quod animi velit ipsa nobis cum rerum, voluptates eum nam?</p>
+    <h2 id="about">About</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum porro, officiis nesciunt aspernatur nisi beatae, perspiciatis tempore facere inventore voluptatibus consequuntur repellendus eveniet magni similique illum! Possimus, quisquam laudantium fuga porro a asperiores aperiam ipsa amet soluta, voluptates corrupti reiciendis voluptatum fugiat nemo dolorum recusandae placeat itaque optio iusto quia facere architecto fugit. Sapiente doloremque dignissimos culpa omnis dicta non eum quidem veritatis quasi at facere modi quam inventore a molestiae, obcaecati voluptatum atque perferendis. Illo, ullam assumenda! Doloremque hic incidunt libero reprehenderit praesentium eveniet fuga? Totam, quaerat porro blanditiis, deleniti voluptatem fuga sapiente rerum unde tempore optio facere sed?</p>
+    <h2 id="contacts">Contacts</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam optio nobis doloribus aspernatur, minima voluptas ipsam a sed quia recusandae vel sequi ut, delectus saepe blanditiis voluptatum autem praesentium labore. Ullam quibusdam libero nostrum repellendus nobis doloribus iste, consequuntur veritatis rem odio tempora quae quo ad eum assumenda alias placeat reprehenderit consectetur aliquid sequi eligendi temporibus dolorem. Provident recusandae quas odio? Vitae dolor unde nisi inventore nostrum doloribus in? Voluptas enim quis molestiae reprehenderit, natus laboriosam ab! Perferendis labore nemo sapiente culpa dicta molestias quidem perspiciatis, est eaque. Doloremque tempora quod rem maxime in unde tempore repellat debitis illum voluptate.</p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Model</title>
+
+    <style>
+        .container {
+            border: 1px solid black;
+            height: 400px;
+
+            /* встановлення flex контейнера */
+            display: flex;
+            /* напрямок головної та поперечної осі */
+            flex-direction: row;
+            /* вирівнювання елементів по головній осі */
+            /* justify-content:space-between; */
+            /* вирівнювання елементів по поперечеій осі */
+            align-items: flex-start;
+            /* встановлення переносу елементів при нехватці місця */
+            flex-wrap: wrap;
+            /* вирівнювання рівнів елементів при наявності декількох рядків або колонок */
+            /* align-content:center; */
+
+            /* загальна властивість яка включає параметри: flex-direction || flex-wrap */
+            flex-flow: row wrap;
+        }
+
+        .item {
+            background-color: teal;
+            padding: 30px;
+            width: 90px;
+            color: white;
+            border: 1px solid rgb(0, 107, 107);
+
+            /* загальна властивість яка включає параметри: flex-grow || flex-shrink || flex-basis */
+            flex: 1; /* flex-grow */
+            flex: 1 1; /* flex-grow flex-shrink */
+            flex: 1 10%; /* flex-grow flex-basis */
+            flex: 0 1 auto; /* (defaults) flex-grow flex-shrink flex-basis */
+        }
+
+        .item:nth-child(1) {
+            /* зміна порядку розміщення елемента */
+            /* order: 1; */
+            /* коефіцієнт розширенння елемента при нявності вільного місця */
+            /* flex-grow: 2; */
+        }
+        .item:nth-child(2) {
+            /* вирівнювання окремого елемента по головній осі */
+            /* align-self: flex-end; */
+        }
+        .item:nth-child(3) {
+            min-width: 100px;
+            max-width: 150px;
+            /* ширина елемента */
+            flex-basis: 20%;
+        }
+        .item:nth-child(4) {
+            /* flex-grow: 1; */
+            /* коефіцієнт звуження елемента при нехватці місця */
+            flex-shrink: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+</body>
+</html>

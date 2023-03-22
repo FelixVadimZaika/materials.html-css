@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ProductList</title>
+​
+    <style>
+    #product-list {
+    list-style-type: none;
+    color: aliceblue;
+    counter-reset: counter;
+    background-color: rgb(236, 158, 158);
+    padding: 20px;
+    }
+    #product-list li {
+    background-color: rgb(196, 106, 106);
+    padding-left: 10px;
+    margin: 5px 0;
+    padding: 10px;
+    }
+    #product-list li::before {
+    content: counter(counter);
+    counter-increment: counter;
+    margin: 0 10px;
+    }
+    #product-list span{
+        background-color: rgb(168, 66, 63);
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    
+    <ul id="product-list">
+        
+        <li><span>Apple</span></li>
+        <li><span>Orange</span></li>
+        <li><span>Pineapple</span></li>
+        <li><span>Pear</span></li>
+        <li><span>Cherry</span></li>
+        
+    </ul>
+</body>
+</html>

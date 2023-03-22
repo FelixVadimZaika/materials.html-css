@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rotate</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #callback{
+       width: 300px;
+       height: 150px;
+       background-color: grey;
+     }
+     #callback p{
+       color: #fff;
+       padding: 30px;
+     }
+     #callback:after{
+       content: 'Обратная связь';
+       background-color: pink;
+       text-align: center;
+       border-radius: 0 0 8px 8px;
+       padding: 5px 0;
+       width: 150px; /*ширина псевдоэлемента равна высоте блока, тк будет поворот*/
+       position: absolute; /*позиционирование абсолютное*/
+       left: 300px; /*позиция слвеа равен ширине блока #callback*/
+       top: 150px; /*позиция сверху равна высоте блока*/
+       transform: rotate(-90deg);
+       transform-origin: 0 0;
+     }
+    </style>
+  </head>
+  <body>
+    <div id="callback">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </body>
+</html>

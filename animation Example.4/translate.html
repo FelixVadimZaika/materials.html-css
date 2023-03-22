@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Transform</title>
+    <style>
+      .point {
+        width: 3px;
+        height: 3px;
+        background-color: black;
+        position: relative;
+        top: 50%;
+        left: 50%;
+      }
+      .box{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        display: inline-block;
+        border: 3px solid black;
+        border-top-color: blue;
+        border-right-color: yellow;
+        border-bottom-color: red;
+        transition: transform .5s ease;
+      }
+      .origin {
+          transform-origin: 0% 0%;
+      }
+
+      .translate:hover {
+        transform: translate(20px, -20px);
+      }
+      .scale:hover {
+        transform: scale(1.1,1.2);
+      }
+      .rotate:hover {
+        transform: rotate(45deg);
+      }
+      .skew:hover {
+        transform: skew(10deg, 5deg);
+      }
+      .matrix:hover {
+        transform: matrix(1.1, 1, -2, 1.1, 0, 0);
+      }
+      .animation {
+        animation: round 4s ease-out alternate infinite;
+      }
+
+      @keyframes round {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box translate">
+      <!-- Центральная точка -->
+      <!-- <div class="point"></div> -->
+    </div>
+    <div class="box scale"></div>
+    <div class="box rotate"></div>
+    <div class="box rotate origin"></div>
+    <div class="box skew"></div>
+    <div class="box matrix"></div>
+    <div class="box animation"></div>
+  </body>
+</html>

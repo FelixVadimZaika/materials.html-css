@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+​
+    <style>
+        /* CSS syntax:
+        selector {
+            property: value;
+            property: value;
+        } */
+​
+        /* Class Selector */
+        .style1 {
+            padding: 10px 20px;
+            background-color: rgba(230, 130, 130, .5); /* 0.5 = .5 */
+            border-radius: 10px;
+            margin: 25px;
+​
+            hyphens: auto;
+            -webkit-hyphens: auto;
+        }
+        .style2 {
+            color: #54cccc;
+            text-align: center;
+        }
+        .span-style1 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            word-spacing: 3px;
+            color: green;
+        }
+        .underline {
+            /* text-decoration-line: underline;
+            text-decoration-color: brown;
+            text-decoration-style: double; */
+            text-decoration: underline double brown;
+        }
+​
+        /* Tag Selector */
+        strong {
+            font-size: 20px;
+        }
+        h2 {
+            text-align: right;
+            letter-spacing: 2px;
+            color: rgb(0, 81, 255);
+            margin-right: 30px;
+            font-variant: small-caps;
+        }
+        p {
+            word-wrap: break-word;
+        }
+​
+        /* ID Selector */
+        #main-title {
+            font-size: 32px;
+            text-align: center;
+            text-shadow: 3px 3px 3px #bbb, 
+                         1px 1px 1px #333;
+            text-transform: uppercase;
+        }
+    </style>
+​
+</head>
+<body>
+    <!-- Common Attributes:
+        - title
+        - style
+        - id
+        - class
+        - name
+        - tabindex
+    -->
+    <h1 id="main-title">Intro to CSS</h1>
+​
+    <h2>Inline Style</h2>
+    <!-- Inline Style: <tag style="property=value; property=value;"> -->
+    <p style="color:red; background-color: gray;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores cum velit ea iusto pariatur dolorum quasi soluta sapiente vero quia aliquid eaque, itaque doloremque magnam eum reiciendis tenetur alias.</p>
+​
+    <h2>CSS selectors</h2>
+    <p class="style1"><strong>Lorem ipsum</strong>, dolor <span class="underline">sit</span> amet  consectetur adipisicing elit. Sit voluptates, dignissimos quos id corporis qui molestiae quasi voluptate explicabo velit exercitationem pariatur tempora nostrum sapiente officiis. Maxime tenetur dicta officia.</p>
+    <p class="style1">Asperiores <span class="span-style1">repellendus odit</span> quos repellat fuga expedita qui assumenda nobis provident officia minima doloremque tenetur, ipsam aspernatur sint eius. Nisi fugit ipsum, necessitatibus ratione labore obcaecati temporibus blanditiis quae aperiam!</p>
+    <p class="style2">Aperiam <span class="span-style1">ipsa corrupti</span> quis id sed aut vitae, quae sapiente dicta quaerat voluptatibus architecto obcaecati similique ratione laboriosam ipsam incidunt nesciunt. Ducimus eaque exercitationem quas dolorem itaque facere, quo alias.</p>
+    <p class="style2">Illo ab <span class="underline">explicabo</span> aliquid rem nulla accusantium aspernatur sint quaerat blanditiis alias illum esse, reiciendis, porro voluptatum impedit nam ratione dolore tempore sunt asperiores. Perspiciatis deleniti nobis perferendis explicabo id!</p>
+    <p>Quia <span class="underline">necessitatibus</span> minima nostrum beatae veniam  eligendi eveniet quaerat quo consectetur Veryyyyyyyyyyyyyyyyyyyyyy&shy;Looooonooonooonooonooonooong&shy;Woooonooonooooonooononooonord itaque neque corporis minus modi fugit ipsum, sed nisi enim odio quisquam molestias magnam. Perferendis nisi a impedit temporibus.</p>
+</body>
+</html>

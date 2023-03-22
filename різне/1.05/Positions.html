@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>ramka</title>
+  <style>
+ 
+   .border {
+    display: inline-block; 
+    position: relative; 
+   }
+   .border, .border::after {
+    border: 15px solid rgb(185, 100, 100); 
+    box-sizing: border-box; 
+   }
+   .border img { display: block; }
+   .border::after {
+    content: '';
+    position: absolute; 
+    left: 0; top: 0; 
+    width: 100%; height: 100%; 
+    z-index: -1;
+    transform: rotate(-40deg);
+   }
+  </style>
+ </head>
+ <body>
+     <figure class="border">
+  <img src="images/wedding.jpg" alt="" width="300" height="333">
+     </figure>
+ </body>
+</html>

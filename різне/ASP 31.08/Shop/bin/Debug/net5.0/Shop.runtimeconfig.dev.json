@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\turbo\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\turbo\\.nuget\\packages"
+    ]
+  }
+}

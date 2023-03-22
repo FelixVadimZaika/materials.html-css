@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body { 
+            margin: 0;
+        }
+
+        .clearfix::before, .clearfix::after {
+            content: "";
+            display: table;
+        }
+        .clearfix::after {
+            clear: both;
+        }
+
+        header {
+            background-color:lightskyblue;
+            height: 100px;
+        }
+        nav {
+            background-color:cornflowerblue;
+            height: 50px;
+        }
+        #left {
+            background-color:green;
+            height: 400px;
+            width: 30%;
+            float: left;
+        }
+        main {
+            background-color:darkorchid;
+            height: 400px;
+            width: 48%;
+            float: left;
+            margin: 0 1%;
+            padding: 10px;
+            border: 10px solid gray;
+        }
+        #right {
+            background-color:rebeccapurple;
+            height: 150px;
+            width: 20%;
+            float: right;
+        }
+        footer {
+            background-color:indianred;
+            height: 200px;
+        }
+
+        /* width <= 700 */
+        @media screen and (max-width:700px) {
+            #right {
+                float: none;
+                width: 100%;
+                clear: both;
+            }
+            main {
+                width: 69%;
+                margin-right: 0;
+            }
+        }
+        /* width >= 500 and <= 700 */
+        @media screen and (min-width:500px) and (max-width:700px)  {
+            main {
+                border: none;
+            }
+        }
+        /* width <= 500 */
+        @media screen and (max-width:500px) {
+            #left {
+                display: none;
+            }
+            main {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+                font-size: 1.2em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <div class="clearfix">
+        <aside id="left"></aside>
+        <main>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati excepturi deleniti odio necessitatibus perspiciatis, earum ipsum ex eum voluptates! Hic magni nemo recusandae laudantium eligendi eum consequuntur culpa, asperiores quis.</p>
+        </main>
+        <aside id="right"></aside>
+    </div>
+    <footer>Hello I am a footer</footer>
+</body>
+</html>

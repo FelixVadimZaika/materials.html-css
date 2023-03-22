@@ -1,0 +1,60 @@
+/* Universal Selector */
+
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+
+/* 
+::before - content before element
+::after - content after element
+*/
+
+.styled {
+    list-style: none;
+    counter-reset: number;
+}
+
+.styled li::before {
+    content: counter(number) ")) ";
+    counter-increment: number;
+    color: brown;
+}
+
+dt {    
+    background-color: rgb(90, 184, 228);
+    color: blue;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+dd {
+    background-color: rgb(130, 255, 255);
+    color: rgb(0, 132, 255);
+    padding: 10px 20px;
+    margin: 0;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+#week-days {
+    list-style-type: none;
+    background-color: rgb(236, 158, 158);
+    padding: 10px;
+}
+#week-days li {
+    background-color: rgb(196, 106, 106);
+    padding: 5px;
+    padding-left: 20px;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+#week-days li::before {
+    content: "-";
+    color: black;
+    background-color: brown;
+    padding: 5px;
+    margin: 0 10px;
+}
